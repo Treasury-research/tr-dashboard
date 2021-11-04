@@ -1,0 +1,48 @@
+{
+  "name": "trboard",
+  "version": "1.0.0",
+  "description": "TR DASHBOARD",
+  "main": "index.js",
+  "author": "ancheng",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack serve",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "7.15.8",
+    "@babel/plugin-proposal-decorators": "7.15.8",
+    "@babel/preset-env": "7.15.8",
+    "@babel/preset-react": "7.14.5",
+    "@babel/preset-typescript": "7.15.0",
+    "antd-dayjs-webpack-plugin": "1.0.6",
+    "babel-loader": "8.2.3",
+    "babel-plugin-import": "1.13.3",
+    "clean-webpack-plugin": "4.0.0",
+    "cross-env": "7.0.3",
+    "css-loader": "6.4.0",
+    "file-loader": "6.2.0",
+    "html-webpack-plugin": "5.5.0",
+    "less-loader": "10.2.0",
+    "path": "0.12.7",
+    "simple-progress-webpack-plugin": "2.0.0",
+    "style-loader": "3.3.1",
+    "terser-webpack-plugin": "5.2.4",
+    "webpack": "5.60.0",
+    "webpack-bundle-analyzer": "4.5.0",
+    "webpack-cli": "4.9.1",
+    "webpack-dev-server": "4.3.1"
+  },
+  "dependencies": {
+    "@ant-design/charts": "1.2.14",
+    "@ant-design/icons": "4.7.0",
+    "@antv/g2plot": "2.3.39",
+    "antd": "4.16.13",
+    "dayjs": "1.10.7",
+    "less": "4.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-router": "6.0.0",
+    "react-router-dom": "5.3.0"
+  }
+}

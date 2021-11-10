@@ -7,10 +7,10 @@ import AggreationStatistic from "../../components/AggreationStatistic";
 
 import "./index.less";
 
-export default (props) => {
+export default () => {
   const [statisticVisible, setStatisticVisible] = useState<boolean>(false);
 
-  const formItems = useMemo(() => {
+  const formItems = useMemo((): Array<any> => {
     return [
       {
         key: "items_keywords",
@@ -76,9 +76,9 @@ export default (props) => {
         element: <Select placeholder="Aggreation" />,
       },
     ];
-  });
+  }, []);
 
-  const tableColumns = useMemo(() => {
+  const tableColumns = useMemo((): Array<any> => {
     return [
       {
         key: "txid",
@@ -126,7 +126,7 @@ export default (props) => {
         dataIndex: "time",
       },
     ];
-  });
+  }, []);
 
   const tableHeader = useMemo(() => {
     return (
@@ -140,7 +140,7 @@ export default (props) => {
         </Button>
       </div>
     );
-  });
+  }, []);
 
   return (
     <div className="details">

@@ -4,7 +4,7 @@ import { Route } from "react-router-dom";
 import Layout from "../../components/Layout";
 import { homeSubRouters } from "../../routers";
 
-export default (props) => {
+export default () => {
   return (
     <Layout>
       <Layout.Sidebar />

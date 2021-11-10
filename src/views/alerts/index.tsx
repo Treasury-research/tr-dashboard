@@ -4,8 +4,8 @@ import { SearchOutlined } from "@ant-design/icons";
 
 import TableWithFilter from "../../components/TableWithFilter";
 
-export default (props) => {
-  const formItems = useMemo(() => {
+export default () => {
+  const formItems = useMemo((): Array<any> => {
     return [
       {
         key: "items_keywords",
@@ -71,9 +71,9 @@ export default (props) => {
         element: <Select placeholder="Aggreation" />,
       },
     ];
-  });
+  }, []);
 
-  const tableColumns = useMemo(() => {
+  const tableColumns = useMemo((): Array<any> => {
     return [
       {
         key: "project",
@@ -106,7 +106,7 @@ export default (props) => {
         dataIndex: "time",
       },
     ];
-  });
+  }, []);
 
   const dataSource = [
     {
